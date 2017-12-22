@@ -1,13 +1,8 @@
-#use fixed armv7hf compatible raspbian OS version from group resin.io as base image
-FROM resin/armv7hf-debian:stretch-20171118
+#use latest armv7hf compatible raspbian OS version from group resin.io as base image
+FROM resin/armv7hf-debian:stretch
 
-#enable building ARM container on x86 machinery on the web (comment out next 3 lines if built on Raspberry) 
-ENV QEMU_EXECVE 1
-COPY armv7hf-debian-qemu /usr/bin
+#enable building ARM container on x86 machinery on the web (comment out next line if built on Raspberry) 
 RUN [ "cross-build-start" ]
-
-#execute all commands as root
-USER root
 
 #labeling
 LABEL maintainer="netpi@hilscher.com" \
