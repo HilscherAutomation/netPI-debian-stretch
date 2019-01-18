@@ -6,7 +6,7 @@ Made for [netPI](https://www.netiot.com/netpi/), the Raspberry Pi 3B Architectur
 
 The image provided hereunder deploys a container with installed plain Debian Stretch.
 
-Base of this image builds a tagged version of [debian:stretch](https://hub.docker.com/r/resin/armv7hf-debian/tags/) with enabled [SSH](https://en.wikipedia.org/wiki/Secure_Shell) and created user 'root'.
+Base of this image builds [debian](https://www.balena.io/docs/reference/base-images/base-images/) with enabled [SSH](https://en.wikipedia.org/wiki/Secure_Shell) and created user 'root'.
 
 #### Container prerequisites
 
